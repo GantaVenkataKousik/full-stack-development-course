@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Tags Demonstration</h1>
+        <nav>
+            <ul>
+                <li><a href="#div">Div</a></li>
+                <li><a href="#p">Paragraph</a></li>
+                <li><a href="#input">Input</a></li>
+                <li><a href="#span">Span</a></li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#a">Anchor</a></li>
+                <li><a href="#img">Image</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#select">Select</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#button">Button</a></li>
+                <li><a href="#canvas">Canvas</a></li>
+                <li><a href="#iframe">IFrame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="div">
+            <h2>&lt;div&gt;</h2>
+            <p>A generic container for flow content, which does not inherently represent anything.</p>
+            <div class="example">
+                <div>This is a div element.</div>
+            </div>
+        </section>
+
+        <section id="p">
+            <h2>&lt;p&gt;</h2>
+            <p>Defines a paragraph of text.</p>
+            <div class="example">
+                <p>This is a paragraph.</p>
+            </div>
+        </section>
+
+        <section id="input">
+            <h2>&lt;input&gt;</h2>
+            <p>Used to create interactive controls for web-based forms to accept data from the user.</p>
+            <div class="example">
+                <input type="text" placeholder="Enter text here" name="exampleInput" required>
+            </div>
+        </section>
+
+        <section id="span">
+            <h2>&lt;span&gt;</h2>
+            <p>Used to group inline-elements in a document.</p>
+            <div class="example">
+                <span>This is a span element.</span>
+            </div>
+        </section>
+
+        <section id="headings">
+            <h2>&lt;h1&gt; to &lt;h6&gt;</h2>
+            <p>Defines HTML headings, with &lt;h1&gt; being the highest (or most important) level and &lt;h6&gt; the least.</p>
+            <div class="example">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+        </section>
+
+        <section id="a">
+            <h2>&lt;a&gt;</h2>
+            <p>Defines a hyperlink, which is used to link from one page to another.</p>
+            <div class="example">
+                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Visit Example.com</a>
+            </div>
+        </section>
+
+        <section id="img">
+            <h2>&lt;img&gt;</h2>
+            <p>Embeds an image in the document.</p>
+            <div class="example">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image" width="150" height="150">
+            </div>
+        </section>
+
+        <section id="form">
+            <h2>&lt;form&gt;</h2>
+            <p>Represents a document section that contains interactive controls to submit information to a web server.</p>
+            <div class="example">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section id="select">
+            <h2>&lt;select&gt; and &lt;option&gt;</h2>
+            <p>Creates a drop-down list.</p>
+            <div class="example">
+                <select name="options">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="table">
+            <h2>&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h2>
+            <p>Used to create a table.</p>
+            <div class="example">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="button">
+            <h2>&lt;button&gt;</h2>
+            <p>Represents a clickable button.</p>
+            <div class="example">
+                <button type="button" disabled>Click Me!</button>
+            </div>
+        </section>
+
+        <section id="canvas">
+            <h2>&lt;canvas&gt;</h2>
+            <p>Used to draw graphics on the fly via scripting (usually JavaScript).</p>
+            <div class="example">
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var canvas = document.getElementById('myCanvas');
+                    var context = canvas.getContext('2d');
+                    context.fillStyle = 'blue';
+                    context.fillRect(10, 10, 150, 80);
+                </script>
+            </div>
+        </section>
+
+        <section id="iframe">
+            <h2>&lt;iframe&gt;</h2>
+            <p>Embeds another document within the current HTML document.</p>
+            <div class="example">
+                <iframe src="https://www.example.com" width="300" height="200" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Tags Demonstration</p>
+    </footer>
+</body>
+</html>
